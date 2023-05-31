@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="reset" href="reset.css">
+    <script type="text/javascript" src="Script.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="imagenes/Frame 6.png" alt="logoAlura">
+        </div>     
+        
+
+    </header>
+
+    <main>
+        <section class="seccion1">
+
+            <input type="text" id="areaTexto" placeholder="Escribe tu mensaje...">
+                   
+        </section>
+
+        <section class="seccion3">
+            <div class="botonera">
+                <button type="button" id="botonEncriptado">Encriptar</button>
+                  
+                <button type="button" id="botonDesencriptar">Desencriptar</button>
+                
+                <button type="button" id="botonCopiar">Copiar</button>
+            </div>
+        </section>
+
+        <section class="seccion2">
+
+            <div class="textoDesencriptado">
+                <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="contenedorImagen">
+                <img src="imagenes/BABYPNG.png" alt="imagenYoda">
+            </div>
+                  
+        </section>
+    
+
+        <script>
+            var btn = document.querySelector("#botonEncriptado");
+            btn.onclick = encriptar;
+        
+            var btn2 = document.querySelector("#botonDesencriptar");
+            btn2.onclick = desencriptar;
+        
+            var btn3 = document.querySelector("#botonCopiar");
+            btn3.onclick = copiar;
+        </script>       
+
+    </main>
+
+    <footer>
+        &copy Copyright Julieth Sogamoso - 2023
+    </footer>
+
+</body>
+</html>
+
+<!--
+    <input type="text" id="textoEncriptado">
+    <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+
+    <button type="button" id="botonEncriptado">Encriptar</button>
+    <button type="button" id="botonDesencriptar">Desencriptar</button>
+    <button type="button" id="botonCopiar">Copiar</button>
+
+    <script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+
+    var btn2 = document.querySelector("#botonDesencriptar");
+    btn2.onclick = desencriptar;
+
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+    </script>
